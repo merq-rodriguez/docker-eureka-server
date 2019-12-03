@@ -19,3 +19,5 @@ Implementation of eureka server with docker
 # build the docker container using docker-compose
 `docker-compose up -d`
 
+# 4. Register a service instance in Eureka using a RESTful API
+`curl -i --request POST --header "Content-Type: application/json" --data @eureka-payload.json http://localhost:8761/eureka/apps/my-service`
